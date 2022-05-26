@@ -29,8 +29,10 @@
 * router의 기본 모드는 hash # 이다
 * 이를 없애고 싶으면 mode를 history 로 해주면 # 해쉬가 없어진다.
 
-### $route.params
-* router.js에서 path 부분에 '/users/:userId'   :하고 뒤에 적은 값을 가져올 수 있다.
+### path: "/users/:userId" path 주소창으로 값 전달 받기
+* router.js에서 속성 이름을 지정해줘서 주소창을 통해 값을 전달 받을 수도 있다.
+
+### params 로 값 전달 받기
 * params 객체 안에 값을 넣어서 전달할 수 있다.
 
 
