@@ -20,3 +20,7 @@
 
 ### vuetify 의 router 로 이동하기
 * :to="{name: 'home'}" 으로 태그안에 :to로 v-bind 해준다.
+* 햄버거메뉴에서 about으로 이동하게 되면 home과 about 두개에 파란색으로 표시가 됨
+* / 라는 것이 들어가 있으면 active 되라 라는 뜻인데, <br>
+  /about 일때도 / 가 포함이 되므로 중복으로 파란색으로 표시가 된다.
+* 그래서 태그안에 exact 를 넣어서 path가 똑같을 때에만 active 할 수 있다.
