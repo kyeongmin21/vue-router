@@ -67,11 +67,6 @@ export default {
   }),
   props: {
     source: String
-  },
-  methods: {
-    homeClick() {
-
-    }
   }
 }
 </script>
