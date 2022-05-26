@@ -23,9 +23,17 @@
           </v-list-tile-content>
         </v-list-tile>
 
-        <v-list-tile :to="{
+        <v-list-tile
+          :to="{
           name: 'users',
-          params:{ userId: 4321, name: 'min' }
+          params:{
+            userId: 4321,
+            name: 'min'
+          },
+          query: {
+            group: 'shop',
+            category: 'outer'
+          }
         }" exact>
           <v-list-tile-action>
             <i class="fas fa-user"></i>

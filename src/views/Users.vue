@@ -3,6 +3,8 @@
     <h1>users</h1>
     <p>유저번호 : {{ userId }}</p>
     <p>이름 : {{ $route.params.name }}</p>
+    <p>그룹 : {{ $route.query.group }}</p>
+    <p>카테고리 : {{ $route.query.category }}</p>
   </div>
 </template>
 

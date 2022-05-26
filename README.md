@@ -36,3 +36,10 @@
 * params 객체 안에 값을 넣어서 전달할 수 있다.
 
 
+### query
+* /users/4321?group=shop&category=outer
+* params 처럼 값을 숨겨서 전달 할 수가 없기 때문에 <br>
+  넘겨주는 값을 어떻게 사용 하는 지와, 이 페이지가 어떤 보안을 갖춰야 하는지에 따라서<br>
+  parmas 와 query를 용도에 맞게 써야한다.
+
+
