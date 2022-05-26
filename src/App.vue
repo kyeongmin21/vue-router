@@ -23,7 +23,10 @@
           </v-list-tile-content>
         </v-list-tile>
 
-        <v-list-tile :to="{name: 'users'}" exact>
+        <v-list-tile :to="{
+          name: 'users',
+          params:{ userId: 4321, name: 'min' }
+        }" exact>
           <v-list-tile-action>
             <i class="fas fa-user"></i>
           </v-list-tile-action>
@@ -58,7 +61,7 @@ export default {
     source: String
   },
   methods: {
-    homeClick () {
+    homeClick() {
 
     }
   }

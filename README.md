@@ -31,6 +31,6 @@
 
 ### $route.params
 * router.js에서 path 부분에 '/users/:userId'   :하고 뒤에 적은 값을 가져올 수 있다.
-
+* params 객체 안에 값을 넣어서 전달할 수 있다.
 
 

@@ -2,7 +2,7 @@
   <div>
     <h1>users</h1>
     <p>유저번호 : {{ userId }}</p>
-
+    <p>이름 : {{ $route.params.name }}</p>
   </div>
 </template>
 
