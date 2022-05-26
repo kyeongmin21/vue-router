@@ -5,7 +5,7 @@
       fixed
       app>
       <v-list dense>
-        <v-list-tile @click="$router.push({ name: 'home' })">
+        <v-list-tile :to="{name: 'home'}">
           <v-list-tile-action>
             <i class="fas fa-home"></i>
           </v-list-tile-action>

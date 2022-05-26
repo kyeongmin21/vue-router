@@ -11,8 +11,12 @@
 * url에 따른 컴포넌트가 화면에 그려지는 영역
 
 
-### @click="$router.push({ })"
+### @click="$router.push({ })" 클릭이벤트로 이동하기
 * router 에 값을 push 하겠다! 라는 뜻
 * 객체로 써주는 경우가 현업에서 많이 쓰인다.
 
-### Compiles and minifies for production
+### <router-link> 태그로 이동하기
+* to="{name: 'home'}" 는 <a href="/"></a> a태그와 같다.
+
+### vuetify 의 router 로 이동하기
+* :to="{name: 'home'}" 으로 태그안에 :to로 v-bind 해준다.
