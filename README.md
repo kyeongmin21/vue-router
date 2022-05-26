@@ -48,6 +48,6 @@
   parmas 와 query를 용도에 맞게 써야한다.
 
 
-### 하위경로 설정하기
-* 
+### 10.하위경로 설정하기
+* /users/users-detail 같이 하위 경로를 설정할려면  user안에 children으로 객체를 또 선언해주면 된다.
 
