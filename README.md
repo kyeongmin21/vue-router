@@ -24,3 +24,10 @@
 * / 라는 것이 들어가 있으면 active 되라 라는 뜻인데, <br>
   /about 일때도 / 가 포함이 되므로 중복으로 파란색으로 표시가 된다.
 * 그래서 태그안에 exact 를 넣어서 path가 똑같을 때에만 active 할 수 있다.
+
+
+### mode: "history"
+* router의 기본 모드는 hash # 이다
+* 이를 없애고 싶으면 mode를 history 로 해주면 # 해쉬가 없어진다.
+
+
