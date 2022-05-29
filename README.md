@@ -50,4 +50,9 @@
 
 ### 10. 하위경로 설정하기
 * users 안에서 동작하는 라우터가 있어야 한다. router-view
+* users 라우터 안에 children 을 만들면 하위 라우터가 생성된다.
+* 검색 버튼을 눌렀을 때 하위 경로로 이동하게 만들기
+* path로 찾을 때 : $router.push({ path: `users/${userId}` })
+* name으로 찾을 때 : $router.push({ name: 'users-detail', params: { id: userId } }) <br>
+ users 의 파라미터값도 함께 넘겨야 한다. 
 
