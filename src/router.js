@@ -29,7 +29,11 @@ export default new Router({
         { path: ':id',
           name: 'users-detail',
           component: () => import(/* webpackChunkName: "users-detail" */ './views/UsersDetail.vue')
-        }
+        },
+        { path: ':id/edit',
+          name: 'users-edit',
+          component: () => import(/* webpackChunkName: "users-edit" */ './views/UsersEdit.vue')
+        },
       ]
     }
   ]

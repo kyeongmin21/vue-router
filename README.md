@@ -54,5 +54,10 @@
 * 검색 버튼을 눌렀을 때 하위 경로로 이동하게 만들기
 * path로 찾을 때 : $router.push({ path: `users/${userId}` })
 * name으로 찾을 때 : $router.push({ name: 'users-detail', params: { id: userId } }) <br>
- users 의 파라미터값도 함께 넘겨야 한다. 
+ users 의 파라미터값도 함께 넘겨야 한다.
+  
+### 11. UserDetatil 에서 유저번호 값 받아오기
+* computed 속성안에 params 로 받아오기
 
+
+### 12. usersEdit
