@@ -61,3 +61,9 @@
 
 
 ### 12. usersEdit
+
+### 13. router Guard
+* beforeEnter : 라우터가 불러와 지기 전에 함수가 먼저 시작된 후 라우터가 동작하게 한다.
+* beforeEnter:(to, from, next) 가 온다.
+* to, from 이 어디에서 어디로 이동하는지를 알 수 있고, <br>
+  next는 라우트를 어디로 이동시킬 수 있는지 설정할 수 있음.

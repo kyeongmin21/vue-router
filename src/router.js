@@ -24,6 +24,11 @@ export default new Router({
     {
       path: '/users',
       name: 'users',
+      beforeEnter: (to, from, next) => {
+        console.log('to', to)
+        console.log('from', from)
+        next('/')
+      },
       component: () => import(/* webpackChunkName: "users" */ './views/Users.vue'),
       children: [
         { path: ':id',
