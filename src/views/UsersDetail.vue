@@ -16,7 +16,8 @@ export default {
   },
   methods: {
     edit () {
-      this.$router.push({ name: 'users-edit' })
+      // this.$router.push({ name: 'users-edit' })
+      this.$router.push({ path: `${this.userId}/edit` })
     }
   }
 }

@@ -7,6 +7,11 @@
 <script>
 export default {
   name: "UsersEdit",
+  computed: {
+    userId() {
+      return this.$route.params.id
+    }
+  },
   methods: {
   }
 }
