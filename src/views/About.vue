@@ -1,5 +1,5 @@
 <template>
-  <div class="text-md-center">
+  <div class="text-md-center text-sm-center">
     This is About Page
     <h1>클릭</h1>
 

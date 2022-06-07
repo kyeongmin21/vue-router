@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home.vue'
+import Category from '@/router/category'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -16,7 +17,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+      component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
     },
     {
       path: '/users',
@@ -26,22 +27,20 @@ export default new Router({
         console.log('from', from)
         next('/')
       },*/
-      component: () => import(/* webpackChunkName: "users" */ '../views/Users.vue'),
+      component: () => import(/* webpackChunkName: "users" */ '@/views/Users.vue'),
       children: [
         { path: ':id',
           name: 'users-detail',
-          component: () => import(/* webpackChunkName: "users-detail" */ '../views/UsersDetail.vue')
+          component: () => import(/* webpackChunkName: "users-detail" */ '@/views/UsersDetail.vue')
         },
         { path: ':id/edit',
           name: 'users-edit',
-          component: () => import(/* webpackChunkName: "users-edit" */ '../views/UsersEdit.vue')
+          component: () => import(/* webpackChunkName: "users-edit" */ '@/views/UsersEdit.vue')
         },
       ]
-    },
-    {
-      path: '/Category/shop',
-      name: 'shop',
-      component: () => import(/* webpackChunkName: "shop" */ '../views/Category/Shop.vue')
-    },
+    }
   ]
 })
+
+router.addRoute(Category)
+export default router
