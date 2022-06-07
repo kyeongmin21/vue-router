@@ -14,6 +14,8 @@
 ### 3. @click="$router.push({ })" 클릭이벤트로 이동하기
 * router 에 값을 push 하겠다! 라는 뜻
 * 객체로 써주는 경우가 현업에서 많이 쓰인다.
+* $router : new router 안의 모든 객체 라우터들
+* $route : 현재 path의 라우트
 
 
 ### 4. <router-link> 태그로 이동하기
