@@ -3,6 +3,7 @@
     <h1 @click="$router.push({ name: 'shop' })">Shop</h1>
     <v-btn @click="$router.push({ name: 'outer' })">outer</v-btn>
     <v-btn @click="$router.push({ name: 'top' })">top</v-btn>
+<!--    <v-btn :to="{name: 'top'}">top</v-btn>-->
     <router-view/>
   </div>
 </template>

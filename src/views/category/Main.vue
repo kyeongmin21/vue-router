@@ -1,11 +1,12 @@
 <template>
   <div class="text-md-center text-sm-center">
-    <h1>Outer 페이지 입니다.</h1>
+    <h1>main</h1>
+    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Outer"
+  name: "Main"
 }
 </script>
