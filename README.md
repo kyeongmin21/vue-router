@@ -15,6 +15,16 @@
 * $router : new router 안의 모든 객체 라우터들
 * $route : 현재 path의 라우트
 
+* Route 객체의 프로퍼티와 메서드
+  * path : 현재 라우트의 경로를 나타내는 문자열.
+  * params : 정의된 URL 패턴과 일치하는 파라미터의 키-값 쌍을 담고 있는 객체. 파라미터가 없다면 빈 객체.
+  * query : 쿼리 문자열의 키-쌍 값을 담고 있는 객체. 쿼리가 없다면 빈 객체. (경로가 /foo?user=1 이면 $route.query.user == 1이 된다.
+  * hash : 현재 URL에 URL 해시가 있을 경우 라우트의 해시값을 갖는다. 해시가 없다면 빈 객체
+  * fullPath : 쿼리 및 해시를 포함하는 전체 URL
+  * name : 이름을 가진 라우트인 경우 라우트의 이름
+
+
+
 ### 4. <router-link> 태그로 이동하기
 * to="{name: 'home'}" 는 <a href="/"></a> a태그와 같다.
 
